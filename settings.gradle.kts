@@ -4,3 +4,4 @@ plugins {
 rootProject.name = "hf-design-patterns"
 
 include("01-strategy")
+include("02-observer")

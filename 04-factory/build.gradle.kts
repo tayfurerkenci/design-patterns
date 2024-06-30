@@ -4,7 +4,7 @@ plugins {
     application
 }
 
-group = "org.hf_design_patterns.decorator"
+group = "org.hf_design_patterns.factory"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -25,5 +25,5 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 application {
-    mainClass.set("org.hf_design_patterns.decorator.StarbuzzCoffeeKt")
+    mainClass.set("org.hf_design_patterns.factory.PizzaTestDriveKt")
 }

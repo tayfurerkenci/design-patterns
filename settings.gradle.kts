@@ -6,3 +6,4 @@ rootProject.name = "hf-design-patterns"
 include("01-strategy")
 include("02-observer")
 include("03-decorator")
+include("04-factory")

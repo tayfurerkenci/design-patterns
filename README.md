@@ -26,4 +26,7 @@ This repository contains Kotlin implementations of the design patterns described
 6. ### Command Pattern
    The Command Pattern encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. It also allows for the support of undoable operations.
 
+7. ### Adapter and Facade Pattern
+The Adapter Pattern allows objects with incompatible interfaces to collaborate. It wraps itself around an object and presents a different interface to the client. The Facade Pattern provides a simplified interface to a complex subsystem, making it easier for the client to interact with the subsystem.
+
 Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.

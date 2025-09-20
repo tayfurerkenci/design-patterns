@@ -5,13 +5,20 @@ This repository contains Kotlin implementations of the design patterns described
 1. ### Strategy Pattern
    The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
+   #### Example:  
+   - `QuackBehavior` interface defines a `quack` method.
+   - `Squeak` class implements `QuackBehavior` and provides a specific implementation of `quack`.
+
 2. ### Observer Pattern
    The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
+   #### Example:  
+   - `CurrentConditionsDisplay` class implements `Observer` and `DisplayElement` interfaces.
+   - It registers itself with `WeatherData` and updates its display whenever the weather data changes
 3. ### Decorator Pattern
    The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
-4. ### Factory Pattern
+4. ### Factory Pattern 
    The Factory Pattern defines an interface for creating an object, but lets subclasses alter the type of objects that will be created. It includes Factory Method and Abstract Factory sub-patterns.
 
     - #### Factory Method
@@ -27,6 +34,10 @@ This repository contains Kotlin implementations of the design patterns described
    The Command Pattern encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. It also allows for the support of undoable operations.
 
 7. ### Adapter and Facade Pattern
-The Adapter Pattern allows objects with incompatible interfaces to collaborate. It wraps itself around an object and presents a different interface to the client. The Facade Pattern provides a simplified interface to a complex subsystem, making it easier for the client to interact with the subsystem.
+   The Adapter Pattern allows objects with incompatible interfaces to collaborate. It wraps itself around an object and presents a different interface to the client. The Facade Pattern provides a simplified interface to a complex subsystem, making it easier for the client to interact with the subsystem.
 
-Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.
+8. ### Template Method Pattern
+   The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. It lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
+
+<em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

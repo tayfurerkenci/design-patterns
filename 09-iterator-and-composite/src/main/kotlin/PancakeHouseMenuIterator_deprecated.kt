@@ -1,6 +1,6 @@
 package org.hf_design_patterns
 
-class PancakeHouseMenuIterator(private val items: List<MenuItem>) : Iterator {
+class PancakeHouseMenuIterator_deprecated(private val items: List<MenuItem>) : Iterator_deprecated {
     private var position: Int = 0
 
     override fun hasNext(): Boolean {

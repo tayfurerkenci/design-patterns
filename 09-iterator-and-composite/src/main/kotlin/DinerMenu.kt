@@ -1,6 +1,8 @@
 package org.hf_design_patterns
 
-class DinerMenu {
+import kotlin.collections.Iterator
+
+class DinerMenu: Menu {
     companion object {
         private const val MAX_ITEMS: Int = 6
     }
@@ -27,5 +29,5 @@ class DinerMenu {
         }
     }
 
-     fun createIterator(): Iterator = DinerMenuIterator(menuItems)
+     override fun createIterator(): Iterator<MenuItem>  = DinerMenuIterator(menuItems)
 }

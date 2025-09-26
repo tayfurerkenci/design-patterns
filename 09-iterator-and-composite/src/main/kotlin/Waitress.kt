@@ -1,8 +1,10 @@
 package org.hf_design_patterns
 
-class Waitress(private val pancakeHouseMenu: PancakeHouseMenu, private val dinerMenu: DinerMenu) {
+import kotlin.collections.Iterator
 
-    private fun printMenu(iterator: Iterator) {
+class Waitress(private val pancakeHouseMenu: Menu, private val dinerMenu: Menu) {
+
+    private fun printMenu(iterator: Iterator<MenuItem>) {
         while (iterator.hasNext()) {
             val menuItem = iterator.next()
             println(menuItem)

@@ -1,6 +1,8 @@
 package org.hf_design_patterns
 
-class PancakeHouseMenu  {
+import kotlin.collections.Iterator
+
+class PancakeHouseMenu: Menu  {
     private val menuItems: MutableList<MenuItem> = mutableListOf()
 
     init {
@@ -15,5 +17,5 @@ class PancakeHouseMenu  {
         menuItems.add(menuItem)
     }
 
-    fun createIterator(): Iterator= PancakeHouseMenuIterator(menuItems)
+    override fun createIterator(): Iterator<MenuItem> = menuItems.iterator()
 }

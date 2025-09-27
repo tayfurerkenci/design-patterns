@@ -1,10 +1,22 @@
 package org.hf_design_patterns
 
-data class MenuItem(
-    val name: String = "",
-    val description: String = "",
-    val vegetarian: Boolean = false,
-    val price: Double = 0.0
-) {
-    override fun toString(): String = "$name, \$${price} -- $description"
+class MenuItem(
+    private val name: String = "",
+    private val description: String = "",
+    private val vegetarian: Boolean = false,
+    private val price: Double = 0.0
+) : MenuComponent() {
+
+    override fun getName(): String = name
+
+    override fun getDescription(): String = description
+
+    override fun getPrice(): Double = price
+
+    override fun isVegetarian(): Boolean = vegetarian
+
+    override fun print() {
+        val vegMarker = if (isVegetarian()) " (v)" else ""
+        println(getName() + vegMarker + ", $" + getPrice() + " -- " + getDescription())
+    }
 }

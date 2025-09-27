@@ -2,7 +2,7 @@ package org.hf_design_patterns
 
 import kotlin.collections.Iterator
 
-class DinerMenu: Menu {
+class DinerMenu_deprecated(private val name: String, private val description: String): Menu(name, description) {
     companion object {
         private const val MAX_ITEMS: Int = 6
     }
@@ -29,5 +29,5 @@ class DinerMenu: Menu {
         }
     }
 
-     override fun createIterator(): Iterator<MenuItem>  = DinerMenuIterator(menuItems)
+    fun createIterator(): Iterator<MenuItem>  = DinerMenuIterator_deprecated(menuItems)
 }

@@ -2,7 +2,7 @@ package org.hf_design_patterns
 
 import kotlin.collections.Iterator
 
-class DinerMenuIterator(private val items: Array<MenuItem?>) : Iterator<MenuItem> {
+class DinerMenuIterator_deprecated(private val items: Array<MenuItem?>) : Iterator<MenuItem> {
     private var position: Int = 0
 
     override fun hasNext(): Boolean {

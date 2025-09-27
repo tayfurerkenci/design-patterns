@@ -2,7 +2,7 @@ package org.hf_design_patterns
 
 import kotlin.collections.Iterator
 
-class PancakeHouseMenu: Menu  {
+class PancakeHouseMenu_deprecated(private val name: String, private val description: String): Menu(name, description)  {
     private val menuItems: MutableList<MenuItem> = mutableListOf()
 
     init {
@@ -17,5 +17,5 @@ class PancakeHouseMenu: Menu  {
         menuItems.add(menuItem)
     }
 
-    override fun createIterator(): Iterator<MenuItem> = menuItems.iterator()
+    fun createIterator(): Iterator<MenuItem> = menuItems.iterator()
 }

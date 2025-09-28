@@ -39,8 +39,10 @@ This repository contains Kotlin implementations of the design patterns described
 8. ### Template Method Pattern
    The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. It lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
 9. ### Iterator and Composite Pattern
-   - **The Iterator Pattern** provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. 
-   - **The Composite Pattern** allows you to compose objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions of objects uniformly.
+   - #### The Iterator Pattern
+     Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. 
+   - #### The Composite Pattern 
+     Allows you to compose objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions of objects uniformly.
 
 
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

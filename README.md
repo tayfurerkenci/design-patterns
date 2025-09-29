@@ -44,5 +44,8 @@ This repository contains Kotlin implementations of the design patterns described
    - #### The Composite Pattern 
      Allows you to compose objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions of objects uniformly.
 
+10. ### State Pattern
+    The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
 
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

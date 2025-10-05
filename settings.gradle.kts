@@ -13,3 +13,5 @@ include("07-adapter-and-facade")
 include("08-template-method")
 include("09-iterator-and-composite")
 include("10-state")
+
+include("12-compound")

@@ -50,4 +50,7 @@ This repository contains Kotlin implementations of the design patterns described
 11. ### Proxy Pattern
     The Proxy Pattern provides a surrogate or placeholder for another object to control access to it. It can be used for lazy initialization, access control, logging, etc.
 
+12. ### Compound Pattern
+    The Compound Pattern combines multiple design patterns to solve a complex problem. It often involves using patterns like Composite, Decorator, and Strategy together to create a more flexible and reusable design.
+
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

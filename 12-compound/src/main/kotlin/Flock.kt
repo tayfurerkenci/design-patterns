@@ -2,17 +2,12 @@ package org.hf_design_patterns
 
 class Flock: Quackable {
     private val quackers = mutableListOf<Quackable>()
-    private val observable: Observable = Observable(this)
 
     fun add(quacker: Quackable) {
         quackers.add(quacker)
-        // Register a proxy observer on the child so the flock can notify its own observers
-        quacker.registerObserver(object : Observer {
-            override fun update(duck: QuackObservable) {
-                // A child quacked; notify observers registered on the flock about that child
-                observable.notifyObserversOf(duck)
-            }
-        })
+        // Do NOT register proxy observers here. Observers should be registered
+        // when someone calls registerObserver on the flock (so they get registered
+        // on current children). This avoids surprise side-effects at add-time.
     }
 
     override fun quack() {
@@ -24,10 +19,15 @@ class Flock: Quackable {
     }
 
     override fun registerObserver(observer: Observer) {
-        observable.registerObserver(observer)
+        // Register the observer on every child so the observer receives updates
+        // directly from whichever duck actually quacked.
+        for (quacker in quackers) {
+            quacker.registerObserver(observer)
+        }
     }
 
     override fun notifyObservers() {
-        observable.notifyObservers()
+        // Flock itself does not notify observers. Each quacker notifies its own
+        // observers when it quacks.
     }
 }

@@ -26,9 +26,9 @@ fun main() {
     flockOfDucks.add(flockOfMallards)
 
     println("\nDuck Simulator: With Observer")
-    // Observe the flock as a whole with a FlockObserver
-    val flockObserver: Observer = FlockObserver()
-    flockOfDucks.registerObserver(flockObserver)
+    // Observe the flock as a whole with a Quackologist (observe children via Flock.registerObserver)
+    val quackologist: Observer = Quackologist()
+    flockOfDucks.registerObserver(quackologist)
 
     println("\nDuck Simulator: Whole Flock Simulation")
     simulate(flockOfDucks)

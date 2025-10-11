@@ -2,6 +2,15 @@
 
 This repository contains Kotlin implementations of the design patterns described in the "Head First Design Patterns" book by O'Reilly. Each pattern is implemented as a separate module within this project.
 
+## Design Pattern
+A pattern is a solution to a problem in a context.
+- The **context** is the situation in which the pattern applies. This should be  a recurring situation.
+- The **problem** refers to the goal you are trying to achieve in this context, but it also refers to any constraints that occur in the context.
+- The **solution** is what you're after: a general design that everyone can apply that resolves the goal and set of constraints.
+
+> If you find yourself in a *context* with a *problem* that has a goal that is affected by a set of constraints, then you can apply a design that resolves the goal and constaints and leads to a *solution*.
+
+
 1. ### Strategy Pattern
    The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
@@ -52,5 +61,9 @@ This repository contains Kotlin implementations of the design patterns described
 
 12. ### Compound Pattern
     The Compound Pattern combines multiple design patterns to solve a complex problem. It often involves using patterns like Composite, Decorator, and Strategy together to create a more flexible and reusable design.
+13. ### Bridge Pattern
+    The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. It is used to separate the interface from the implementation, allowing both to evolve separately.
+14. ### Builder Pattern
+    The Builder Pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It is useful for creating objects with many optional parameters or when the construction process is complex.
 
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

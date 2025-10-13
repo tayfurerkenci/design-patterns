@@ -65,5 +65,13 @@ A pattern is a solution to a problem in a context.
     The Bridge Pattern decouples an abstraction from its implementation so that the two can vary independently. It is used to separate the interface from the implementation, allowing both to evolve separately.
 14. ### Builder Pattern
     The Builder Pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It is useful for creating objects with many optional parameters or when the construction process is complex.
+15. ### Chain of Responsibility Pattern
+    The Chain of Responsibility Pattern allows multiple objects to handle a request without the sender needing to know which object will handle it. The request is passed along a chain of potential handlers until one of them handles it.
+16. ### Flyweight Pattern
+    The Flyweight Pattern is a structural design pattern that allows programs to support vast quantities of objects by keeping their memory consumption low. It achieves this by sharing as much data as possible with similar objects.
+17. ### Interpreter Pattern
+    The Interpreter Pattern is a behavioral design pattern that defines a grammatical representation for a language and provides an interpreter to deal with this grammar. It is used to evaluate sentences in a language.
+18. ### Mediator Pattern
+    The Mediator Pattern is a behavioral design pattern that defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
 
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>

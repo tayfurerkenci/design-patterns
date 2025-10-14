@@ -73,5 +73,11 @@ A pattern is a solution to a problem in a context.
     The Interpreter Pattern is a behavioral design pattern that defines a grammatical representation for a language and provides an interpreter to deal with this grammar. It is used to evaluate sentences in a language.
 18. ### Mediator Pattern
     The Mediator Pattern is a behavioral design pattern that defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+19. ### Memento Pattern
+    The Memento Pattern is a behavioral design pattern that provides the ability to restore an object to its previous state (undo via rollback). The memento pattern is implemented with three objects: the originator, a caretaker, and a memento.
+20. ### Prototype Pattern
+    The Prototype Pattern is a creational design pattern that allows cloning objects, even complex ones, without coupling to their specific classes. It is used when the cost of creating a new object is expensive or complicated.
+21. ### Visitor Pattern
+    The Visitor Pattern is a behavioral design pattern that separates an algorithm from the object structure on which it operates. It allows you to add new operations to existing object structures without modifying those structures.
 
 <em>Each pattern is implemented with Kotlin, showcasing how these patterns can be applied in a modern programming language. The examples are designed to be as idiomatic and clear as possible, demonstrating the power and simplicity of Kotlin in implementing classic design patterns.</em>
